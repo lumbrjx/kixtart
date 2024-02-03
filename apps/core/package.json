@@ -1,0 +1,7 @@
+{
+	"name": "core",
+	"scripts": {
+		"build": "go build -o ../../packages/core",
+		"dev": "gomon src -- go run ."
+	}
+}
