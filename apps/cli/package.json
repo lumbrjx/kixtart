@@ -1,8 +1,9 @@
 {
 	"name": "kixtart",
-	"version": "1.0.4",
+	"version": "1.0.6",
 	"description": "",
 	"scripts": {
+		"test": "vitest run",
 		"dev": "tsx watch src/index.ts",
 		"build": "tsup && npm run copy-binary",
 		"copy-binary": "cpy 'src/core' dist --flat",
@@ -27,7 +28,8 @@
 		"ts-node": "^10.9.1",
 		"tsup": "^8.0.1",
 		"tsx": "^4.7.0",
-		"typescript": "^5.3.3"
+		"typescript": "^5.3.3",
+		"vitest": "^1.2.2"
 	},
 	"dependencies": {
 		"@clack/core": "^0.3.2",

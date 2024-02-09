@@ -3,6 +3,7 @@
 	"scripts": {
 		"build": "go build -o ../cli/src",
 		"dev": "gomon src -- go run .",
-		"start": ""
+		"start": "",
+		"test": ""
 	}
 }
