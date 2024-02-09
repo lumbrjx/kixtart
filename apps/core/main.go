@@ -1,12 +1,14 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"os"
+)
 
 // - provide path for templates
 // - provide preferences (struct)
 // - provide output path
 
 func main() {
-	fmt.Print("hellsqsqdfqdsfo sdfsdsdqfsqdfqsdqfdqs  world")
-
+	fmt.Println("You provided:", os.Args[1])
 }

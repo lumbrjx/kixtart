@@ -1,7 +1,8 @@
 {
 	"name": "core",
 	"scripts": {
-		"build": "go build -o ../../packages/core",
-		"dev": "gomon src -- go run ."
+		"build": "go build -o ../cli/src",
+		"dev": "gomon src -- go run .",
+		"start": ""
 	}
 }

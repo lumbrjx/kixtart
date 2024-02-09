@@ -1,24 +1,25 @@
 {
-  "name": "kixtart",
-  "private": true,
-  "scripts": {
-    "build": "turbo build",
-    "dev": "turbo dev",
-    "lint": "turbo lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md,go}\""
-  },
-  "devDependencies": {
-    "@repo/eslint-config": "*",
-    "@repo/typescript-config": "*",
-    "prettier": "^3.1.1",
-    "turbo": "latest"
-  },
-  "engines": {
-    "node": ">=18"
-  },
-  "packageManager": "npm@9.2.0",
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ]
+	"name": "kixtart",
+	"private": true,
+	"scripts": {
+		"build": "turbo build",
+		"start": "turbo --filter=cli start",
+		"dev": "turbo dev",
+		"lint": "turbo lint",
+		"format": "prettier --write \"**/*.{ts,tsx,md,go}\""
+	},
+	"devDependencies": {
+		"@repo/eslint-config": "*",
+		"@repo/typescript-config": "*",
+		"prettier": "^3.1.1",
+		"turbo": "latest"
+	},
+	"engines": {
+		"node": ">=18"
+	},
+	"packageManager": "npm@9.2.0",
+	"workspaces": [
+		"apps/*",
+		"packages/*"
+	]
 }
