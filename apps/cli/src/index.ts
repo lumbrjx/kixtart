@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import { execa } from "execa";
 import { fileURLToPath } from "url";
 import path from "path";

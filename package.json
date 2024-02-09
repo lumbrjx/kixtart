@@ -1,18 +1,22 @@
 {
-	"name": "kixtart",
-	"private": true,
+	"name": "kixtart-root",
+	"version": "1.0.2",
+	"private": false,
 	"scripts": {
 		"build": "turbo build",
-		"start": "turbo --filter=cli start",
+		"start": "turbo --filter=cli@1.0.1 start",
 		"dev": "turbo dev",
 		"lint": "turbo lint",
-		"format": "prettier --write \"**/*.{ts,tsx,md,go}\""
+		"format": "prettier --write \"**/*.{ts,tsx,md,go}\"",
+		"pub:glob": "cd apps/cli && npm run pub:cli"
 	},
+	"main": "./apps/cli/dist/index.js",
+	"module": "./apps/cli/dist/index.js",
 	"devDependencies": {
 		"@repo/eslint-config": "*",
 		"@repo/typescript-config": "*",
 		"prettier": "^3.1.1",
-		"turbo": "latest"
+		"turbo": "^1.12.3"
 	},
 	"engines": {
 		"node": ">=18"
@@ -21,5 +25,6 @@
 	"workspaces": [
 		"apps/*",
 		"packages/*"
-	]
+	],
+	"dependencies": {}
 }

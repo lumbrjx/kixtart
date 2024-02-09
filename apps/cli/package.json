@@ -1,14 +1,22 @@
 {
-	"name": "cli",
-	"version": "0.0.0",
+	"name": "kixtart",
+	"version": "1.0.4",
 	"description": "",
 	"scripts": {
 		"dev": "tsx watch src/index.ts",
 		"build": "tsup && npm run copy-binary",
 		"copy-binary": "cpy 'src/core' dist --flat",
-		"serve": "vite preview",
-		"start": "node dist/index.js"
+		"start": "node dist/index.js",
+		"pub:cli": "npm publish"
 	},
+	"files": [
+		"dist",
+		"README.md",
+		"package.json"
+	],
+	"main": "./dist/index.js",
+	"bin": "./dist/index.js",
+	"exports": "./dist/index.js",
 	"type": "module",
 	"license": "MIT",
 	"devDependencies": {
