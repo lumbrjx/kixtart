@@ -1,41 +1,41 @@
 {
-	"name": "kixtart",
-	"version": "1.0.7",
-	"description": "",
-	"scripts": {
-		"test": "vitest run",
-		"dev": "tsx watch src/index.ts",
-		"build": "tsup && npm run copy-binary",
-		"copy-binary": "cpy 'src/core' dist --flat",
-		"start": "node dist/index.js",
-		"pub:cli": "npm publish"
-	},
-	"files": [
-		"dist",
-		"README.md",
-		"package.json"
-	],
-	"main": "./dist/index.js",
-	"bin": "./dist/index.js",
-	"exports": "./dist/index.js",
-	"type": "module",
-	"license": "MIT",
-	"devDependencies": {
-		"@repo/eslint-config": "*",
-		"@repo/typescript-config": "*",
-		"@types/node": "^20.6.0",
-		"cpy-cli": "^5.0.0",
-		"ts-node": "^10.9.1",
-		"tsup": "^8.0.1",
-		"tsx": "^4.7.0",
-		"typescript": "^5.3.3",
-		"vitest": "^1.2.2"
-	},
-	"dependencies": {
-		"@clack/core": "^0.3.2",
-		"@clack/prompts": "^0.6.3",
-		"chalk": "5.2.0",
-		"execa": "^7.1.1",
-		"zod": "^3.22.4"
-	}
+  "name": "kixtart",
+  "version": "1.0.8",
+  "description": "",
+  "scripts": {
+    "test": "vitest run",
+    "dev": "tsx watch src/index.ts",
+    "build": "tsup && npm run copy-binary",
+    "copy-binary": "cpy 'src/core' dist --flat",
+    "start": "node dist/index.js",
+    "pub:cli": "npm publish"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "package.json"
+  ],
+  "main": "./dist/index.js",
+  "bin": "./dist/index.js",
+  "exports": "./dist/index.js",
+  "type": "module",
+  "license": "MIT",
+  "devDependencies": {
+    "@repo/eslint-config": "*",
+    "@repo/typescript-config": "*",
+    "@types/node": "^20.6.0",
+    "cpy-cli": "^5.0.0",
+    "ts-node": "^10.9.1",
+    "tsup": "^8.0.1",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3",
+    "vitest": "^1.2.2"
+  },
+  "dependencies": {
+    "@clack/core": "^0.3.2",
+    "@clack/prompts": "^0.6.3",
+    "chalk": "5.2.0",
+    "execa": "^7.1.1",
+    "zod": "^3.22.4"
+  }
 }
