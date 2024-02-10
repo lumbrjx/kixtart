@@ -8,7 +8,7 @@
     "build": "tsup && npm run copy-binary",
     "copy-binary": "cpy 'src/core' dist --flat",
     "start": "node dist/index.js",
-    "pub:cli": "npm publish"
+    "pub:cli": "npm publish --access public"
   },
   "files": [
     "dist",
