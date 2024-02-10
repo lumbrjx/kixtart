@@ -1,31 +1,33 @@
 {
-	"name": "kixtart-root",
-	"version": "1.0.3",
-	"private": false,
-	"scripts": {
-		"test": "turbo test",
-		"build": "turbo build",
-		"start": "turbo --filter=cli@1.0.1 start",
-		"dev": "turbo dev",
-		"lint": "turbo lint",
-		"format": "prettier --write \"**/*.{ts,tsx,md,go}\"",
-		"pub:glob": "cd apps/cli && npm run pub:cli"
-	},
-	"main": "./apps/cli/dist/index.js",
-	"module": "./apps/cli/dist/index.js",
-	"devDependencies": {
-		"@repo/eslint-config": "*",
-		"@repo/typescript-config": "*",
-		"prettier": "^3.1.1",
-		"turbo": "^1.12.3"
-	},
-	"engines": {
-		"node": ">=18"
-	},
-	"packageManager": "npm@9.2.0",
-	"workspaces": [
-		"apps/*",
-		"packages/*"
-	],
-	"dependencies": {}
+  "name": "kixtart-root",
+  "version": "1.0.3",
+  "private": false,
+  "scripts": {
+    "test": "turbo test",
+    "build": "turbo build",
+    "build:core": "cd apps/core && npm run build",
+    "build:cli": "cd apps/cli && npm run build",
+    "start": "turbo --filter=cli@1.0.1 start",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md,go}\"",
+    "pub:glob": "cd apps/cli && npm run pub:cli"
+  },
+  "main": "./apps/cli/dist/index.js",
+  "module": "./apps/cli/dist/index.js",
+  "devDependencies": {
+    "@repo/eslint-config": "*",
+    "@repo/typescript-config": "*",
+    "prettier": "^3.1.1",
+    "turbo": "^1.12.3"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "npm@9.2.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "dependencies": {}
 }
