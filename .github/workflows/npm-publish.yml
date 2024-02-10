@@ -15,7 +15,7 @@ jobs:
       - name: Setup Go
         uses: actions/setup-go@v2
         with:
-          go-version: "1.20.6" # Replace '1.x' with your desired Go version
+          go-version: "1.21.6" # Replace '1.x' with your desired Go version
 
       - name: Navigate to Go app directory
         run: cd apps/core
