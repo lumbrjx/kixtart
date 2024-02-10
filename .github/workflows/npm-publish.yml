@@ -45,6 +45,9 @@ jobs:
         run: npm run build:cli
       - name: Authenticate with npm
         run: npm config set '//registry.npmjs.org/:_authToken' "${NPM_TOKEN}"
+
+      - name: login
+        run: npm login --username ${NPM_USER} --password ${NPM_PASS} --email ${NPM_EMAIL}
       - name: Publish to npm
         run: cd apps/cli && npm run pub:cli
         env:
