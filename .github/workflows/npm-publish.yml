@@ -19,7 +19,7 @@ jobs:
 
       - name: Navigate to Go app directory
         run: cd apps/core
-
+        run: ls
       - name: Build Go binary
         run: npm run build
 
