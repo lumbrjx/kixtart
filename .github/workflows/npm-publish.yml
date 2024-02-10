@@ -1,10 +1,10 @@
 name: Build and Publish
 
-on:
-  push:
-    branches:
-      - main
 
+on:
+  release:
+    types: [created]
+    
 jobs:
   build-go:
     runs-on: ubuntu-latest
