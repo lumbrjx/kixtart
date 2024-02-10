@@ -1,3 +1,3 @@
 export function helperf(stdout: string) {
-	console.log("yes im helper", stdout);
+	console.log("yes updated im helper", stdout);
 }
