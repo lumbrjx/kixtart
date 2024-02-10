@@ -45,6 +45,6 @@ jobs:
         run: npm run build:cli
 
       - name: Publish to npm
-        run: npm run pub:glob
+        run: cd apps/cli && npm pub:cli
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
